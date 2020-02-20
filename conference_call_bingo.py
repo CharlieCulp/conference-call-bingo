@@ -127,8 +127,8 @@ writer.close()
 
 # Outlook method:
 
-v = open(path + r'\email_list_just_me.txt', 'r')
-# v = open(path + r'\email_list.txt', 'r')
+# v = open(path + r'\email_list_just_me.txt', 'r')
+v = open(path + r'\email_list.txt', 'r')
 contents = v.read()
 outlook = win32.Dispatch('outlook.application')
 mail = outlook.CreateItem(0)
