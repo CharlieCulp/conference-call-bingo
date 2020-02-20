@@ -9,6 +9,8 @@
 # Change log
 # Date         User Description
 # 02/0x/2020   CC   Initial release
+# 02/20/2020   CC   Had to run this to get it to run win32com: 'python -m pip install pywin32'
+#                   That installed, but now I get another error (running non-anaconda)
 
 
 # =============================================================================
@@ -20,6 +22,7 @@ import pandas as pd
 import random
 import datetime as dt  
 import win32com.client as win32
+
 
 path = ('C://Users/U037679/Documents/AnacondaProjects/conference_call_bingo/')
 
