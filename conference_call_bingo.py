@@ -11,6 +11,7 @@
 # 02/0x/2020   CC   Initial release
 # 02/20/2020   CC   Had to run this to get it to run win32com: 'python -m pip install pywin32'
 #                   That installed, but now I get another error (running non-anaconda)
+# 02/20/2020   CC   Added worksheet.center_horizontally() and worksheet.set_row(0, 97.5)
 
 
 # =============================================================================
@@ -24,7 +25,7 @@ import datetime as dt
 import win32com.client as win32
 
 
-path = ('C://Users/U037679/Documents/AnacondaProjects/conference_call_bingo/')
+path = ('C://Users/U037679/Documents/AnacondaProjects/conference-call-bingo/')
 
 infile = (path + 'BINGO_cc.xlsx')
 outfile = (path + 'BINGO_latest.xlsx')
@@ -93,6 +94,7 @@ cell_format.set_align('center')
 cell_format.set_align('vcenter')
 cell_format.set_border(1)
 
+worksheet.set_row(0, 97.5) # test
 worksheet.set_row(1, 97.5)
 worksheet.set_row(2, 97.5)
 worksheet.set_row(3, 97.5)
@@ -102,7 +104,8 @@ worksheet.set_row(5, 97.5)
 worksheet.set_page_view() # There's currently no way to remove the ruler from pageview
 worksheet.hide_gridlines(2) # 0 = don't hide gridlines, 1 = hide printed gridlines only, 2 = hide screen and printed gridlines
 worksheet.set_landscape()
-worksheet.set_margins(left=0.5, right=0.5, top=1.0, bottom=0.50)
+worksheet.center_horizontally()
+worksheet.set_margins(left=0.5, right=0.5, top=1.0, bottom=0.4)
 worksheet.set_column('A:E', 23.0, cell_format) 
 worksheet.print_area('A1:E5')
 
