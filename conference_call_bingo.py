@@ -8,12 +8,10 @@
 #
 # Change log
 # Date         User Description
-# 02/0x/2020   CC   Initial release
-# 02/20/2020   CC   Had to run this to get it to run win32com: 'python -m pip install pywin32'
-#                   That installed, but now I get another error (running non-anaconda)
+# 02/04/2020   CC   Initial release
+# 02/20/2020   CC   Problems with regular Python running win32com so switched
+#                   to Anaconda version and task scheduler now works. 
 # 02/20/2020   CC   Added worksheet.center_horizontally() and worksheet.set_row(0, 97.5)
-
-
 # =============================================================================
 
 # In[11]:
@@ -63,7 +61,7 @@ col4 = df['Quotes'][21:26]
 df_bingo = pd.DataFrame(list(zip(col0, col1, col2, col3, col4)), columns = 
                   ['col0', 'col1', 'col2', 'col3', 'col4'])
 
-df_bingo
+# df_bingo
 
 
 # In[15]:
