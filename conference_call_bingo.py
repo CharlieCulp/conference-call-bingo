@@ -138,7 +138,11 @@ for name in nameList:
 mail.Subject = "Here's the latest conference call bingo card"
 mail.HTMLBody =  '<h3>The latest cards just arrived from HQ!</h3>' + \
                  'Attached is your card for the week.' + \
-                 '<br>(This is an automated message.)'
+                 '<br><br>This is not an exhaustive list. We have ' + \
+                 'more than can fit on one grid, but if you have suggestions, ' + \
+                 'please forward them.' + \
+                 '<br><br>Thanks!' + \
+                 '<br><br>(This is an automated message.)'
 
 attachment  = outfile
 mail.Attachments.Add(attachment)
