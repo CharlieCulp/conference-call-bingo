@@ -138,8 +138,9 @@ for name in nameList:
 mail.Subject = "Here's the latest conference call bingo card"
 mail.HTMLBody =  '<h3>The latest cards just arrived from HQ!</h3>' + \
                  'Attached is your card for the week.' + \
-                 '<br><br>This is not an exhaustive list. We have ' + \
-                 'more than can fit on one grid, but if you have suggestions, ' + \
+                 '<br><br>This is not an exhaustive list. There are ' + \
+                 'more items on the list than can fit on one card, and ' + \
+                 'the list keeps growing! So if you have suggestions, ' + \
                  'please forward them.' + \
                  '<br><br>Thanks!' + \
                  '<br><br>(This is an automated message.)'
@@ -154,7 +155,7 @@ mail.Send()
 # In[38]:
 
 
-# Outlook method
+# Outlook method 2
 # https://stackoverflow.com/questions/6332577/send-outlook-email-via-python
 
 # import win32com.client as win32
