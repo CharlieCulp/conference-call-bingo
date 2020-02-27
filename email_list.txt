@@ -1,8 +1,2 @@
-Charles.Culp@CVSHealth.com
-Charlie.Culp@gmail.com
-Amanda.Pratt@CVSHealth.com
-Christopher.Myhre@CVSHealth.com
-Jacob.Athmann@CVSHealth.com
-
-Nicholas.Christy@CVSHealth.com
-Scott.Pawelko@CVSHealth.com
+tweedledee@foo.com
+tweedledum@bar.com
