@@ -25,7 +25,7 @@ import win32com.client as win32
 
 path = ('C://Users/U037679/Documents/AnacondaProjects/conference-call-bingo/')
 
-infile = (path + 'BINGO_cc.xlsx')
+infile =  (path + 'BINGO_cc.xlsx')
 outfile = (path + 'BINGO_latest.xlsx')
 
 today = dt.datetime.today().strftime("%Y%m%d")
